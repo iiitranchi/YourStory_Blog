@@ -1,0 +1,161 @@
+*, *::before {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: AirwaysPersonal;
+    src: url('../fonts/Airways-personal.ttf');
+}
+
+@font-face {
+    font-family: AdobeSong-light;
+    src: url('../fonts/AdobeSongStd-Light.otf');
+}
+
+body {
+    font-family: AdobeSong-light;
+}
+
+.portfolio {
+    color: white;
+    background: radial-gradient(#363624, #252525);
+}
+
+nav {
+    z-index: 2;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    font-size: 1.5em;
+}
+
+.brand {
+    font-family: AirwaysPersonal;
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+.page {
+    padding-top: 5vh;
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.profile a{
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+
+.profile {
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+
+.profile img {
+    height: 500px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer; 
+}
+
+.model-right {
+    transform: translate(0%, 10%);
+}
+
+.model-left {
+    transform: translate(0%, -10%);
+}
+
+.profile:hover .model-right{
+    transform: translate(0%, 0%);
+}
+
+.profile:hover .model-left {
+    transform: translate(0%, 0%);
+}
+
+.details {
+    grid-column: 2/3;
+    align-self: end;
+    opacity: 0.9;
+}
+
+.details h1,h2 {
+    font-family: AirwaysPersonal;
+    font-weight: 10;
+}
+
+.details h1 {
+    display: inline-block;
+    font-size: 5em;
+}
+
+.details h2 {
+    font-size: 3em;
+    padding: 5px 0px;
+}
+
+.details p{
+    font-size: 1.2em;
+    padding: 35px 0px 55px 0px;
+    opacity: 0.7;   
+}
+
+.pages {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pages > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.pages h3 {
+    font-size: 1.8em;
+    padding: 90px 10px;
+}
+
+.pages svg {
+    align-self: center;
+    display: flex;
+    cursor: pointer;
+    opacity: 0.4;
+    color: white;
+    transform: scale(0.8) translateY(12%);
+}
+
+.pages .activePage {
+    padding: 150px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1.4);
+}
+
+.pages .activePage h3 {
+    transform: translateX(-20%);
+}
+
+.pages .active {
+    transform: translateX(-17%) translateY(8%);
+    opacity: 1;
+}
+
+.author {
+    font-family: AirwaysPersonal;
+}
