@@ -159,3 +159,11 @@ nav {
 .author {
     font-family: AirwaysPersonal;
 }
+
+.menu .text-white a {
+    color: white;
+}
+
+.text-white {
+    color: white;
+}
